@@ -29,6 +29,24 @@ public class RandomPractice {
 			System.out.print(i+" ");
 		}
 		System.out.println();
+		/////////////////////////////////////
+		for (int i : a) {
+			System.out.print(i+" ");
+		}
+		System.out.println();
+		
+		for (int i = 0; i < 100; i++) {
+			int x = rd.nextInt(a.length);
+			int y = rd.nextInt(a.length);
+			int temp = a[x];
+			a[x] = a[y];
+			a[y] = temp;
+		}
+		
+		for (int i : a) {
+			System.out.print(i+" ");
+		}
+		System.out.println();
 	}
 
 }
